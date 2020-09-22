@@ -19,7 +19,7 @@ function show_viewpoints() {
         carousel_item.append(background_image);
         // add div with viewpoint content
         let carousel_caption = document.createElement('div');
-        carousel_caption.setAttribute('class', 'carousel-caption d-block');
+        carousel_caption.setAttribute('class', 'carousel-caption');
         let carousel_intro = document.createElement('h6');
         carousel_intro.textContent = "Buffy's views on";
         carousel_caption.appendChild(carousel_intro);
