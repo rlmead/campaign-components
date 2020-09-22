@@ -43,10 +43,8 @@ function show_viewpoints() {
         if (i === 0) {
             indicator.setAttribute('class', 'active');
         }
-        console.log(indicator);
         carousel_indicators.appendChild(indicator);
     }
-    console.log(carousel)
 }
 
 show_viewpoints();
