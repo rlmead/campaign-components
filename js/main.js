@@ -20,18 +20,19 @@ function show_viewpoints() {
         // add div with viewpoint content
         let carousel_caption = document.createElement('div');
         carousel_caption.setAttribute('class', 'carousel-caption d-block');
-        let carousel_intro = document.createElement('h5');
+        let carousel_intro = document.createElement('h6');
         carousel_intro.textContent = "Buffy's views on";
         carousel_caption.appendChild(carousel_intro);
-        let carousel_subject = document.createElement('h2');
+        let carousel_subject = document.createElement('h3');
         carousel_subject.textContent = viewpoints[i].subject+":";
         carousel_caption.appendChild(carousel_subject);
         let carousel_icon = document.createElement('i');
-        carousel_icon.setAttribute('class','fa fa-3x '+viewpoints[i].icon);
+        carousel_icon.setAttribute('class','fa fa-2x '+viewpoints[i].icon);
         carousel_caption.appendChild(carousel_icon);
-        let carousel_label = document.createElement('h5');
-        carousel_label.textContent = viewpoints[i].blurb;
-        carousel_caption.appendChild(carousel_label);
+        let carousel_blurb = document.createElement('h6');
+        carousel_blurb.textContent = viewpoints[i].blurb;
+        carousel_blurb.setAttribute('class','p-3');
+        carousel_caption.appendChild(carousel_blurb);
         carousel_item.append(carousel_caption);
         // insert new item into viewpoints carousel
         carousel.appendChild(carousel_item);
