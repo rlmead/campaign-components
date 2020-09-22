@@ -12,8 +12,7 @@
 </head>
 
 <body class="bg-info">
-    <!--slogan-->
-    <!--picture with jumbotron-->
+    <!--jumbotron with name and slogan-->
     <div class="jumbotron bg-dark text-white">
         <h1 class="display-5">Buffy Summers for Lexington Constable</h1>
         <p>slaying for the people since 1997</p>
@@ -22,17 +21,33 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
+                <!--carousel with talking points-->
+                <div id="carouselExampleCaptions" class="carousel slide mb-3" data-ride="carousel">
+                    <ol id="carousel-indicators" class="carousel-indicators">
+                        <!--this ol is populated by main.js-->
+                    </ol>
+                    <div id="viewpoints-carousel" class="carousel-inner">
+                        <!--this div is populated by main.js-->
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <!--jumbotron inviting people to public appearances-->
             </div>
-            <div class="col-sm-6">
-                <img src="img/buffy.jpg" class="img-fluid rounded" alt="Buffy Summers with weapons">
+            <div class="col-sm-6  mb-3">
+                <!--picture of Buffy-->
+                <img src="img/buffy_carousel.jpg" class="img-fluid rounded" alt="Buffy Summers with weapons">
             </div>
         </div>
     </div>
 
 
-    <!--carousel with talking points-->
-
-    <!--jumbotron inviting people to public appearances-->
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -43,6 +58,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+    <script src="js/viewpoints.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
