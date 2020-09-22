@@ -1,32 +1,32 @@
 [
     {
         "subject": "our community",
-        "icon": "fa-handshake-o",
-        "blurb":"Everything here is hard, and bright, and violent... This is hell."
+        "blurb":"Everything here is hard, and bright, and violent... This is hell.",
+        "icon": "fa-handshake-o"
     }
     {
         "subject": "the law",
-        "icon": "fa-balance-scale",
-        "blurb":"Human rules don't apply. There's only me. I AM the law."
+        "blurb":"Human rules don't apply. There's only me. I AM the law.",
+        "icon": "fa-balance-scale"
     }
     {
         "subject": "violence",
-        "icon": "fa-bomb",
-        "blurb":"Death, carnage - it's a Buffy party!"
+        "blurb":"Death, carnage - it's a Buffy party!",
+        "icon": "fa-bomb"
     }
     {
         "subject": "global issues",
-        "icon": "fa-globe",
-        "blurb":"The hardest thing in this world is to live in it."
+        "blurb":"The hardest thing in this world is to live in it.",
+        "icon": "fa-globe"
     }
     {
         "subject": "death",
-        "icon": "fa-snapchat-ghost",
-        "blurb":"I may be dead, but I'm still pretty."
+        "blurb":"I may be dead, but I'm still pretty.",
+        "icon": "fa-snapchat-ghost"
     }
     {
         "subject": "her powers",
-        "icon": "fa-fire",
-        "blurb":"I say we change the rules. I say MY power should be OUR power."
+        "blurb":"I say we change the rules. I say MY power should be OUR power.",
+        "icon": "fa-fire"
     }
 ]
