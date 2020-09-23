@@ -12,17 +12,46 @@
 </head>
 
 <body class="bg-info">
-    <!--jumbotron with name and slogan-->
+    <!--jumbotron with name, picture, slogan-->
     <div class="jumbotron bg-dark text-white">
         <img src="img/buffy_header.jpg" class="rounded-circle img-thumbnail" alt="Buffy Summers with wooden stake">
         <h1 class="display-5">Buffy Summers for Lexington Constable</h1>
-        <p>slaying for the people since 1997</p>
+        <p>Slaying for the community since 1997</p>
     </div>
 
+    <!--call to action-->
     <div class="container">
         <div class="row">
+            <div class="col-sm-6  mb-3">
+                <!--jumbotron inviting people to public appearances-->
+                <div class="jumbotron bg-warning">
+                    <h2 class="display-5">Get to know Buffy</h2>
+                    <p>In every generation there is a chosen one. She will stand against the vampires, the demons,
+                        and the forces of darkness - and she wants you to join her!</p>
+                    <p>Every night, Buffy patrols a different Lexington cemetery, keeping the forces of darkness at bay.
+                        Now you can get to know your future constable by joining the cause.</p>
+                </div>
+                <!--popover with upcoming patrol dates-->
+                <button type="button" class="btn btn-lg btn-light" data-toggle="popover" title="Upcoming patrol dates"
+                    data-html="true"
+                    data-content="9/25 | African American Cemetery #2<br />9/26 | Old Episcopal Burial Grounds<br />9/27 | Lexington Cemetery">Click
+                    for upcoming patrol
+                    dates
+                </button>
+            </div>
+            <div class="col-sm-6  mb-3">
+                <img src="img/buffy_call_to_action.jpg">
+            </div>
+        </div>
+    </div>
+    <!--carousel with talking points-->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6  mb-3">
+                <!--picture of Buffy-->
+                <img src="img/buffy_carousel.jpg" class="img-fluid rounded" alt="Buffy Summers with weapons">
+            </div>
             <div class="col-sm-6">
-                <!--carousel with talking points-->
                 <div id="carouselExampleCaptions" class="carousel slide mb-3" data-ride="carousel">
                     <ol id="carousel-indicators" class="carousel-indicators">
                         <!--this ol is populated by main.js-->
@@ -39,17 +68,11 @@
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
-                <!--jumbotron inviting people to public appearances-->
-            </div>
-            <div class="col-sm-6  mb-3">
-                <!--picture of Buffy-->
-                <img src="img/buffy_carousel.jpg" class="img-fluid rounded" alt="Buffy Summers with weapons">
             </div>
         </div>
     </div>
 
-    <img src="img/buffy_call_to_action.jpg">
-
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
