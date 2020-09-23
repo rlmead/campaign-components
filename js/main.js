@@ -14,8 +14,8 @@ function show_viewpoints() {
         }
         // add background image
         let background_image = document.createElement('img');
-        background_image.setAttribute('src','img/carousel.jpg');
-        background_image.setAttribute('class','d-block w-100');
+        background_image.setAttribute('src', 'img/carousel.jpg');
+        background_image.setAttribute('class', 'd-block w-100');
         carousel_item.append(background_image);
         // add div with viewpoint content
         let carousel_caption = document.createElement('div');
@@ -24,22 +24,22 @@ function show_viewpoints() {
         carousel_intro.textContent = "Buffy's views on";
         carousel_caption.appendChild(carousel_intro);
         let carousel_subject = document.createElement('h3');
-        carousel_subject.textContent = viewpoints[i].subject+":";
+        carousel_subject.textContent = viewpoints[i].subject + ":";
         carousel_caption.appendChild(carousel_subject);
         let carousel_icon = document.createElement('i');
-        carousel_icon.setAttribute('class','fa fa-2x '+viewpoints[i].icon);
+        carousel_icon.setAttribute('class', 'fa fa-2x ' + viewpoints[i].icon);
         carousel_caption.appendChild(carousel_icon);
         let carousel_blurb = document.createElement('h6');
         carousel_blurb.textContent = viewpoints[i].blurb;
-        carousel_blurb.setAttribute('class','p-3');
+        carousel_blurb.setAttribute('class', 'p-3');
         carousel_caption.appendChild(carousel_blurb);
         carousel_item.append(carousel_caption);
         // insert new item into viewpoints carousel
         carousel.appendChild(carousel_item);
         // add list item to ol
         let indicator = document.createElement('li');
-        indicator.setAttribute('data-target','#carouselExampleCaptions');
-        indicator.setAttribute('data-slide-to',i.toString());
+        indicator.setAttribute('data-target', '#carouselExampleCaptions');
+        indicator.setAttribute('data-slide-to', i.toString());
         if (i === 0) {
             indicator.setAttribute('class', 'active');
         }
@@ -48,3 +48,7 @@ function show_viewpoints() {
 }
 
 show_viewpoints();
+
+$(document).ready(function () {
+    $('[data-toggle="popover"]').popover();
+});
