@@ -45,6 +45,18 @@ function show_viewpoints() {
         }
         carousel_indicators.appendChild(indicator);
     }
+    // add one more image at the end of carousel
+    let carousel_item = document.createElement('div');
+    carousel_item.setAttribute('class', 'carousel-item');
+    let background_image = document.createElement('img');
+    background_image.setAttribute('src', 'img/buffy_crossbow.jpg');
+    background_image.setAttribute('class', 'd-block w-100');
+    carousel_item.append(background_image);
+    carousel.appendChild(carousel_item);
+    let indicator = document.createElement('li');
+    indicator.setAttribute('data-target', '#carouselExampleCaptions');
+    indicator.setAttribute('data-slide-to', (viewpoints.length+1).toString());
+    carousel_indicators.appendChild(indicator);
 }
 
 show_viewpoints();
