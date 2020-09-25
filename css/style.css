@@ -1,0 +1,25 @@
+/* responsively size viewpoints carousel text for larger views (>1000px) */
+@media screen and (min-width: 1001px) {
+    #viewpoints-carousel h6 {
+        font-size: 3rem;
+    }
+    #viewpoints-carousel h5 {
+        font-size: 2rem;
+    }
+    #viewpoints-carousel h3 {
+        font-size: 2rem;
+    }
+}
+
+  /* responsively size viewpoints carousel text for larger views (>1000px) */
+@media screen and (max-width: 1000px) {
+    #viewpoints-carousel h6 {
+        font-size: 2rem;
+    }
+    #viewpoints-carousel h5 {
+        font-size: 1rem;
+    }
+    #viewpoints-carousel h3 {
+        font-size: 1rem;
+    }
+}

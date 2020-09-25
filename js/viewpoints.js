@@ -25,7 +25,7 @@ const viewpoints = [
         "icon": "fa-snapchat-ghost"
     },
     {
-        "subject": "her powers",
+        "subject": "power",
         "blurb":"\"I say we change the rules. I say MY power should be OUR power.\"",
         "icon": "fa-fire"
     }
